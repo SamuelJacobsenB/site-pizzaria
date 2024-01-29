@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'pizzafont';
+    src: url(../fontes/Delicious-3z8O3.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --cor1-: #C6202E;
+    --cor2-: #D7E666;
+    --font_pizza-: 'pizzafont';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    font: normal 16px Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: var(--cor1-);
+    color: white;
+    width: 99.1vw;
+    min-height: 400px;
+}
+
+header > div#cabecalho {
+    min-height: 100px;
+}
+
+header > div#cabecalho > img {
+    float: left;
+    padding: 37px;
+}
+
+header > div#cabecalho > nav {
+    padding: 37px 0px 37px 1300px;
+    float: left;
+}
+
+header > div#cabecalho > nav > a {
+    color: white;
+    font-size: 20px;
+    margin-right: 40px;
+    text-decoration: none;
+}
+
+header > div#cabecalho > nav > a:hover {
+    color: #f6ffaf;
+    text-decoration: underline;
+    transition: 0.4s;
+}
+
+header > div#imagem-pizza-fundo > img {
+    width: 99.1vw;
+    max-height: 860px;
+    background-size: cover;
+    position: relative;
+}
+
+header > div#imagem-pizza-fundo > h1 {
+    font-family: var(--font_pizza-), Arial, Helvetica, sans-serif;
+    font-size: 250px;
+    text-shadow: 2px 2px 4px black;
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main#menu {
+    padding: 10px 400px;
+}
+
+main#menu > nav {
+    text-align: center;
+    padding: 20px;
+}
+
+main#menu > nav > button {
+    background-color: transparent;
+    font-size: 20px;
+    padding: 0px 80px;
+    margin: 10px 20px;
+
+    cursor: pointer;
+}
+
+main#menu > div#promocao {
+    background-color: rgb(193, 230, 243);
+}
+
+main#menu > div#promocao > h1 {
+    color: rgb(84, 84, 84);
+    margin: 70px 30px;
+    font-size: 70px;
+    float: left;
+}
+
+main#menu > div#promocao > img {
+    max-width: 500px;
+    margin-left: 250px;
+}
+
+#menu_pizza{display: block;}
+#menu_hamburguer{display: none;}
+#menu_bebidas{display: none;}
