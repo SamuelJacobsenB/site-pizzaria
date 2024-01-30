@@ -31,9 +31,18 @@ header > div#cabecalho {
     min-height: 100px;
 }
 
-header > div#cabecalho > img {
+header > div#cabecalho > h2 {
+    background-color: rgb(222, 244, 56);
+    font-family: var(--font_pizza-), Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    text-shadow: 1px 1px 2px black;
+    border-radius: 50%;
+    padding: 7px;
+    margin: 37px;
+
     float: left;
-    padding: 37px;
+    transform: rotate(-5deg);
 }
 
 header > div#cabecalho > nav {
@@ -62,10 +71,13 @@ header > div#imagem-pizza-fundo > img {
 }
 
 header > div#imagem-pizza-fundo > h1 {
+    background-color: #d7e66620;
     font-family: var(--font_pizza-), Arial, Helvetica, sans-serif;
     font-size: 250px;
     text-shadow: 2px 2px 4px black;
+    padding: 53px;
     position: absolute;
+    border-radius: 50%;
 
     left: 50%;
     top: 50%;
@@ -91,11 +103,12 @@ main#menu > nav > button {
 }
 
 main#menu > div#promocao {
-    background-color: rgb(193, 230, 243);
+    background-color: #ddf331;
+    max-height: 350px;
 }
 
 main#menu > div#promocao > h1 {
-    color: rgb(84, 84, 84);
+    color: var(--cor1-);
     margin: 70px 30px;
     font-size: 70px;
     float: left;
@@ -106,6 +119,12 @@ main#menu > div#promocao > img {
     margin-left: 250px;
 }
 
+main#menu > h2.menu-produtos {
+    text-align: center;
+    margin: 30px 0px;
+}
+
 #menu_pizza{display: block;}
 #menu_hamburguer{display: none;}
 #menu_bebidas{display: none;}
+.menu_mostrar-mais{display: none;}
