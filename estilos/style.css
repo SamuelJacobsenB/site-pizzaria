@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+html {
+    scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: 'pizzafont';
     src: url(../fontes/Delicious-3z8O3.ttf);
@@ -13,6 +17,10 @@
     --font_pizza-: 'pizzafont';
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -21,18 +29,22 @@
 }
 
 body {
-    background-image: url(../imagens/imagem-pizza-fundo.jpg);
+    background-image: url(../imagens/img-fundo-pizza.jpeg);
 }
 
 header {
-    background-color: var(--cor1-);
     color: white;
-    width: 99.1vw;
-    min-height: 400px;
+    width: 100vw;
+    min-height: 400px; 
 }
 
 header > div#cabecalho {
+    background-color: var(--cor1-);
+    width: 100vw;
     min-height: 100px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.729);
+
 }
 
 header > div#cabecalho > h2 {
@@ -50,7 +62,7 @@ header > div#cabecalho > h2 {
 }
 
 header > div#cabecalho > nav {
-    padding: 46px 0px 46px 1300px;
+    padding: 46px 0px 46px 1200px;
     float: left;
 }
 
@@ -67,8 +79,13 @@ header > div#cabecalho > nav > a:hover {
     transition: 0.4s;
 }
 
+header > div#imagem-pizza-fundo {
+    border-bottom: 1px solid white;
+    max-height: 860px;
+}
+
 header > div#imagem-pizza-fundo > img {
-    width: 99.1vw;
+    width: 100vw;
     max-height: 860px;
     background-size: cover;
     position: relative;
@@ -89,7 +106,10 @@ header > div#imagem-pizza-fundo > h1 {
 }
 
 main#menu {
-    padding: 10px 400px;
+    background-color: white;
+    margin: 0px 400px 10px 400px;
+    padding: 15px;
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.307);
 }
 
 main#menu > nav {
@@ -121,7 +141,7 @@ main#menu > nav > button > p {
 }
 
 main#menu > div#promocao {
-    background-color: #bff331;
+    background-color: #fffb2542;
     max-height: 250px;
 }
 
@@ -138,7 +158,7 @@ main#menu > div#promocao > img {
 }
 
 main#menu > h2.menu-produtos {
-    background-color: #f6ff00f7;
+    background-color: #f6ff00e1;
     color: #d61828;
     font-family: 'Courier New', Courier, monospace;
     font-size: 40px;
@@ -147,16 +167,172 @@ main#menu > h2.menu-produtos {
     margin: 30px 0px;
 }
 
-main#menu > div.produtos {
+main#menu > div#menu-produtos-estilo {
+    columns: 4;
+}
+
+main#menu > div#menu-produtos-estilo > div.produtos {
     background-color: whitesmoke;
-    max-width: 190px;
-    max-height: 370px;
+    text-align: center;
+    width: 190px;
+    height: 370px;
     padding: 10px;
-    margin: 20px;
+    margin: auto;
+    margin-bottom: 15px;
     border: 2px solid rgba(157, 157, 157, 0.891);
+    border-radius: 10px;
+}
+
+main#menu > div#menu-produtos-estilo > div.produtos:hover {
+    background-color: rgb(234, 234, 234);
+    transition: 0.4s;
+}
+
+main#menu > div#menu-produtos-estilo > div.produtos > img {
+    margin-top: 10px;
+    width: 200px;
+}
+
+main#menu > div#menu-produtos-estilo > div.produtos > p.preco {
+    font-weight: bold;
+    margin: 10px;
+    float: left;
+}
+
+
+main#menu button#btn_mostrar-mais {
+    text-align: center;
+    width: 1073px;
+    cursor: pointer;
+}
+
+main#menu button#btn_mostrar-mais:hover {
+    background-color: rgb(234, 234, 234);
+    color: gray;
+    transition: 0.4s;
+}
+
+main#menu button#btn_mostrar-mais > h2 {
+    font-size: 23px;
+    border: 1px solid rgba(0, 0, 0, 0.447);
+    border-radius: 0px 0px 10px 10px;
+}
+
+main#menu button#btn_mostrar-menos {
+    text-align: center;
+    width: 1073px;
+    cursor: pointer;
+}
+
+main#menu button#btn_mostrar-menos:hover {
+    background-color: rgb(234, 234, 234);
+    color: gray;
+    transition: 0.4s;
+}
+
+main#menu button#btn_mostrar-menos > h2 {
+    font-size: 23px;
+    border: 1px solid rgba(0, 0, 0, 0.447);
+    border-radius: 0px 0px 10px 10px;
+}
+
+article#peca-ja {
+    background-color: white;
+    margin: 0px 400px 10px 400px;
+    padding: 15px;
+    max-height: 200px;
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.307);
+}
+
+article#peca-ja > aside {
+    background-color: #e1ff0021;
+    height: 200px ;
+    border-radius: 2px;
+}
+
+article#peca-ja > aside > h1 {
+    color: #d61828;
+    font-size: 60px;
+    padding: 10px;
+    margin: 50px;
+    margin-left: 280px;
+    float: left;
+}
+
+article#peca-ja > aside > a {
+    color: #d61828;
+    padding: 10px;
+    margin: 45px;
+    margin-right: 300px;
+    float: right;
+}
+
+article#peca-ja > aside > a:hover {
+    color: #25D366;
+    transition: 0.4s;
+}
+
+article#peca-ja > aside ion-icon {
+    width: 90px;
+    height: 90px;
+}
+
+article#redes-sociais {
+    background-color: white;
+    margin: 0px 400px 5px 400px;
+    padding: 15px;
+    height: 250px;
+    max-height: 200px;
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.307);
+}
+
+article#redes-sociais > h2 {
+    color: #e21022;
+    font-size: 50px;
+    padding: 10px;
+    margin: 60px;
+    margin-left: 30px;
+    float: left;
+}
+
+article#redes-sociais > a {
+    color: #d61828;
+    padding: 10px;
+    margin-right: 70px;
+    margin-top: 50px;
+    float: right;
+}
+
+article#redes-sociais  ion-icon {
+    width: 90px;
+    height: 90px;
+}
+
+article#redes-sociais > a#face:hover {
+    color: #0866FF;
+    transition: 0.4s;
+}
+
+article#redes-sociais > a#insta:hover {
+    color: #CE1C5C;
+    transition: 0.4s;
+}
+
+footer#endereco {
+    background-color: white;
+    padding: 12px;
+}
+
+footer#endereco > p#p-endereco {
+    text-align: center;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: normal;
+    text-decoration: underline;
 }
 
 #menu_pizza{display: block;}
 #menu_hamburguer{display: none;}
 #menu_bebidas{display: none;}
-.menu_mostrar-mais{display: none !important;}
+.excluir{display: none;}
+.adicionar{display: block !important;}
