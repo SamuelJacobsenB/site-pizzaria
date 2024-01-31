@@ -38,6 +38,8 @@ header {
     min-height: 400px; 
 }
 
+/*Cabeçalho*/
+
 header > div#cabecalho {
     background-color: var(--cor1-);
     width: 100vw;
@@ -79,6 +81,8 @@ header > div#cabecalho > nav > a:hover {
     transition: 0.4s;
 }
 
+/*Imagem de Fundo*/
+
 header > div#imagem-pizza-fundo {
     border-bottom: 1px solid white;
     max-height: 860px;
@@ -112,6 +116,8 @@ main#menu {
     box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.307);
 }
 
+/*Botões para menus*/
+
 main#menu > nav {
     text-align: center;
     padding: 20px;
@@ -123,12 +129,14 @@ main#menu > nav > button {
     font-size: 20px;
     padding: 10px;
     margin: 15px 80px;
+    border-radius: 10px;
 
     cursor: pointer;
 }
 
 main#menu > nav > button:hover {
     text-decoration: underline;
+    background-color: rgba(128, 128, 128, 0.242);
     transition: 0.4s;
 }
 
@@ -139,6 +147,8 @@ main#menu > nav > button > img {
 main#menu > nav > button > p {
     font-size: 18px;
 }
+
+/*Menu Promoção*/
 
 main#menu > div#promocao {
     background-color: #fffb2542;
@@ -156,6 +166,8 @@ main#menu > div#promocao > img {
     max-width: 350px;
     margin-left: 460px;
 }
+
+/*Produtos do menu*/
 
 main#menu > h2.menu-produtos {
     background-color: #f6ff00e1;
@@ -199,6 +211,22 @@ main#menu > div#menu-produtos-estilo > div.produtos > p.preco {
     float: left;
 }
 
+main#menu > div#menu-produtos-estilo > div.produtos > a {
+    background-color: #4f92ffc6;
+    color: black;
+    margin-right: 10px;
+    margin-top: 5px;
+    padding: 4px 10px 2px 8px;
+    border-radius: 2px;
+    float: right;
+}
+
+main#menu > div#menu-produtos-estilo > div.produtos > a:hover {
+    color: white;
+    transition: 0.4s;
+}
+
+/*Botões mostrar mais e mostrar menos*/
 
 main#menu button#btn_mostrar-mais {
     text-align: center;
@@ -235,6 +263,8 @@ main#menu button#btn_mostrar-menos > h2 {
     border: 1px solid rgba(0, 0, 0, 0.447);
     border-radius: 0px 0px 10px 10px;
 }
+
+/*Peça já*/
 
 article#peca-ja {
     background-color: white;
@@ -277,6 +307,8 @@ article#peca-ja > aside ion-icon {
     height: 90px;
 }
 
+/*Redes sociais*/
+
 article#redes-sociais {
     background-color: white;
     margin: 0px 400px 5px 400px;
@@ -318,6 +350,8 @@ article#redes-sociais > a#insta:hover {
     transition: 0.4s;
 }
 
+/*Endereço*/
+
 footer#endereco {
     background-color: white;
     padding: 12px;
@@ -330,6 +364,8 @@ footer#endereco > p#p-endereco {
     font-weight: normal;
     text-decoration: underline;
 }
+
+/*displays */
 
 #menu_pizza{display: block;}
 #menu_hamburguer{display: none;}

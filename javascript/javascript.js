@@ -13,3 +13,9 @@ btn_mostrarMais.addEventListener('click',(evt)=>{
     menu_mostrarMais.classList.add('adicionar')
     btn_mostrarMenos.classList.add('adicionar')
 })
+
+btn_mostrarMenos.addEventListener('click',(evt)=>{
+    btn_mostrarMais.classList.remove('excluir')
+    menu_mostrarMais.classList.remove('adicionar')
+    btn_mostrarMenos.classList.remove('adicionar')
+})
