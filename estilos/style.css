@@ -20,6 +20,10 @@
     font: normal 16px Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-image: url(../imagens/imagem-pizza-fundo.jpg);
+}
+
 header {
     background-color: var(--cor1-);
     color: white;
@@ -46,7 +50,7 @@ header > div#cabecalho > h2 {
 }
 
 header > div#cabecalho > nav {
-    padding: 37px 0px 37px 1300px;
+    padding: 46px 0px 46px 1300px;
     float: left;
 }
 
@@ -71,7 +75,7 @@ header > div#imagem-pizza-fundo > img {
 }
 
 header > div#imagem-pizza-fundo > h1 {
-    background-color: #d7e66620;
+    background-color: #d7e66644;
     font-family: var(--font_pizza-), Arial, Helvetica, sans-serif;
     font-size: 250px;
     text-shadow: 2px 2px 4px black;
@@ -95,36 +99,64 @@ main#menu > nav {
 
 main#menu > nav > button {
     background-color: transparent;
+    background-size: contain;
     font-size: 20px;
-    padding: 0px 80px;
-    margin: 10px 20px;
+    padding: 10px;
+    margin: 15px 80px;
 
     cursor: pointer;
 }
 
+main#menu > nav > button:hover {
+    text-decoration: underline;
+    transition: 0.4s;
+}
+
+main#menu > nav > button > img {
+    width: 45px;
+}
+
+main#menu > nav > button > p {
+    font-size: 18px;
+}
+
 main#menu > div#promocao {
-    background-color: #ddf331;
-    max-height: 350px;
+    background-color: #bff331;
+    max-height: 250px;
 }
 
 main#menu > div#promocao > h1 {
     color: var(--cor1-);
-    margin: 70px 30px;
-    font-size: 70px;
+    margin: 50px 30px;
+    font-size: 50px;
     float: left;
 }
 
 main#menu > div#promocao > img {
-    max-width: 500px;
-    margin-left: 250px;
+    max-width: 350px;
+    margin-left: 460px;
 }
 
 main#menu > h2.menu-produtos {
+    background-color: #f6ff00f7;
+    color: #d61828;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    font-weight: normal;
     text-align: center;
     margin: 30px 0px;
+}
+
+main#menu > div.produtos {
+    background-color: whitesmoke;
+    max-width: 190px;
+    max-height: 370px;
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid rgba(157, 157, 157, 0.891);
 }
 
 #menu_pizza{display: block;}
 #menu_hamburguer{display: none;}
 #menu_bebidas{display: none;}
-.menu_mostrar-mais{display: none;}
+.menu_mostrar-mais{display: none !important;}
