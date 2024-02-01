@@ -91,7 +91,6 @@ header > div#imagem-pizza-fundo {
 header > div#imagem-pizza-fundo > img {
     width: 100vw;
     max-height: 860px;
-    background-size: cover;
     position: relative;
 }
 
@@ -177,6 +176,7 @@ main#menu > h2.menu-produtos {
     font-weight: normal;
     text-align: center;
     margin: 30px 0px;
+    display: none;
 }
 
 main#menu > div#menu-produtos-estilo {
@@ -193,6 +193,7 @@ main#menu > div#menu-produtos-estilo > div.produtos {
     margin-bottom: 15px;
     border: 2px solid rgba(157, 157, 157, 0.891);
     border-radius: 10px;
+    display: none;
 }
 
 main#menu > div#menu-produtos-estilo > div.produtos:hover {
@@ -232,6 +233,7 @@ main#menu button#btn_mostrar-mais {
     text-align: center;
     width: 1073px;
     cursor: pointer;
+    display: none;
 }
 
 main#menu button#btn_mostrar-mais:hover {
@@ -250,6 +252,7 @@ main#menu button#btn_mostrar-menos {
     text-align: center;
     width: 1073px;
     cursor: pointer;
+    display: none;
 }
 
 main#menu button#btn_mostrar-menos:hover {
@@ -365,10 +368,10 @@ footer#endereco > p#p-endereco {
     text-decoration: underline;
 }
 
+
+
 /*displays */
 
-#menu_pizza{display: block;}
-#menu_hamburguer{display: none;}
-#menu_bebidas{display: none;}
-.excluir{display: none;}
+
+.menu_mostrar-mais{display: none;}
 .adicionar{display: block !important;}
