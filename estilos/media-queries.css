@@ -279,7 +279,7 @@
 
     main#menu > div#promocao > img {
         max-width: 250px;
-        margin-left: 20px;
+        margin-left: 0px;
     }
 
     main#menu > div#menu-produtos-estilo {
@@ -288,32 +288,42 @@
         margin: auto;
     }
 
+    main#menu > div#menu-produtos-estilo > div.produtos {
+        width: 160px;
+        height: 330px;
+    }
+
+    main#menu > div#menu-produtos-estilo > div.produtos > img {
+        margin-top: 10px;
+        width: 150px;
+    }
+
     main#menu button#btn_mostrar-mais {
         padding: 15px;
-        padding-left: 150px;
-        padding-right: 150px;
+        padding-left: 130px;
+        padding-right: 130px;
     }
 
     main#menu button#btn_mostrar-menos {
         padding: 15px;
-        padding-left: 135px;
-        padding-right: 135px;
+        padding-left: 115px;
+        padding-right: 115px;
     }
 
     article#peca-ja > aside > h1 {
-        margin-left: 10px;
+        margin-left: 0px;
     }
 
     article#peca-ja > aside > a {
-        margin-right: 10px;
+        margin-right: 0px;
     }
 
     article#redes-sociais > h2 {
         display: block;
         text-align: center;
-        font-size: 40px;
+        font-size: 35px;
         margin: auto;
-        margin-top: 15px;
+        margin-top: 0px;
         float: none;
     }
 
