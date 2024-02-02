@@ -262,7 +262,7 @@
     }
 
     header > div#imagem-pizza-fundo > h1 {
-        font-size: 125px;
+        font-size: 100px;
 
         left: 50%;
         top: 50%;
@@ -274,11 +274,12 @@
     }
 
     main#menu > div#promocao > h1 {
-        margin: 20px 0px 20px 0px;
+        font-size: 45px;
+        margin: 25px 0px 25px 0px;
     }
 
     main#menu > div#promocao > img {
-        max-width: 250px;
+        max-width: 220px;
         margin-left: 0px;
     }
 
@@ -298,24 +299,34 @@
         width: 150px;
     }
 
+    main#menu > div#menu-produtos-estilo > div.produtos > p {
+        font-size: 15px;
+    }
+
     main#menu button#btn_mostrar-mais {
         padding: 15px;
-        padding-left: 130px;
-        padding-right: 130px;
+        padding-left: 110px;
+        padding-right: 110px;
     }
 
     main#menu button#btn_mostrar-menos {
         padding: 15px;
-        padding-left: 115px;
-        padding-right: 115px;
+        padding-left: 95px;
+        padding-right: 95px;
     }
 
     article#peca-ja > aside > h1 {
+        font-size: 50px;
         margin-left: 0px;
     }
 
     article#peca-ja > aside > a {
         margin-right: 0px;
+    }
+
+    article#peca-ja > aside ion-icon {
+        width: 70px;
+        height: 70px;
     }
 
     article#redes-sociais > h2 {
