@@ -1,0 +1,295 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 1400px) and (max-width: 1875px){
+    header > div#cabecalho {
+        min-height: 120px;
+    }
+
+    header > div#cabecalho > h2 {
+        margin-top: 45px;
+    }
+
+    header > div#cabecalho > nav {
+        padding-left: 700px;
+        margin-top: 13px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px){
+    header > div#cabecalho {
+        min-height: 120px;
+    }
+
+    header > div#cabecalho > h2 {
+        margin-top: 45px;
+    }
+
+    header > div#cabecalho > nav {
+        padding-left: 500px;
+        margin-top: 13px;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px){
+    header > div#cabecalho {
+        min-height: 120px;
+    }
+
+    header > div#cabecalho > h2 {
+        margin-top: 45px;
+    }
+
+    header > div#cabecalho > nav {
+        padding-left: 200px;
+        margin-top: 13px;
+    }
+
+    main#menu > div#promocao {
+        max-height: 200px;
+    }
+
+    main#menu > div#promocao > h1 {
+        margin: 45px 25px;
+    }
+
+    main#menu > div#promocao > img {
+        max-width: 320px;
+        margin-left: 250px;
+    }
+
+    main#menu > div#menu-produtos-estilo {
+        columns: 2;
+        max-width: 650px;
+        margin: auto;
+    }
+
+    main#menu button#btn_mostrar-mais {
+        padding: 15px;
+        padding-left: 350px;
+        padding-right: 350px;
+    }
+
+    main#menu button#btn_mostrar-menos {
+        padding: 15px;
+        padding-left: 340px;
+        padding-right: 340px;
+    }
+
+    article#peca-ja > aside > h1 {
+        margin-left: 180px;
+    }
+
+    article#peca-ja > aside > a {
+        margin-right: 200px;
+    }
+
+    article#redes-sociais > h2 {
+        font-size: 40px;
+        margin-top: 65px;
+        margin-left: 10px;
+    }
+
+    article#redes-sociais  ion-icon {
+        margin-top: 10px;
+        width: 65px;
+        height: 65px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px){
+    header > div#cabecalho {
+        min-height: 120px;
+    }
+
+    header > div#cabecalho > h2 {
+        font-size: 30px;
+        margin-top: 45px;
+        margin-right: 15px;
+        margin-left: 10px;
+    }
+
+    header > div#cabecalho > nav {
+        padding-left: 0px;
+        margin-top: 13px;
+    }
+
+    header > div#cabecalho > nav > a {
+        font-size: 18px;
+    }
+
+    header > div#imagem-pizza-fundo > img {
+        position: relative;
+    }
+
+    header > div#imagem-pizza-fundo > h1 {
+        font-size: 150px;
+
+        left: 50%;
+        top: 35%;
+        transform: translate(-50%, -50%);
+    }
+
+    main#menu > div#promocao {
+        max-height: 200px;
+    }
+
+    main#menu > div#promocao > h1 {
+        margin: 40px 5px 40px 5px;
+    }
+
+    main#menu > div#promocao > img {
+        max-width: 300px;
+        margin-left: 50px;
+    }
+
+    main#menu > div#menu-produtos-estilo {
+        columns: 2;
+        max-width: 650px;
+        margin: auto;
+    }
+
+    main#menu button#btn_mostrar-mais {
+        padding: 15px;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    main#menu button#btn_mostrar-menos {
+        padding: 15px;
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+
+    article#peca-ja > aside > h1 {
+        margin-left: 60px;
+    }
+
+    article#peca-ja > aside > a {
+        margin-right: 60px;
+    }
+
+    article#redes-sociais > h2 {
+        display: block;
+        text-align: center;
+        font-size: 40px;
+        margin: auto;
+        margin-top: 40px;
+        float: none;
+    }
+
+    article#redes-sociais > div {
+        width: 500px;
+        margin: auto;
+    }
+
+    article#redes-sociais a {
+        margin-top: 5px;
+    }
+
+    article#redes-sociais  ion-icon {
+        display: block;
+        width: 65px;
+        height: 65px;
+        margin: 0px 30px;
+        float: none;
+    }
+}
+
+@media screen and (max-width: 600px){
+    header > div#cabecalho {
+        min-height: 120px;
+    }
+
+    header > div#cabecalho > h2 {
+        font-size: 30px;
+        margin-top: 45px;
+        margin-right: 15px;
+        margin-left: 10px;
+    }
+
+    header > div#cabecalho > nav {
+        padding-left: 0px;
+        margin-top: 13px;
+    }
+
+    header > div#cabecalho > nav > a {
+        font-size: 18px;
+    }
+
+    header > div#imagem-pizza-fundo > img {
+        position: relative;
+    }
+
+    header > div#imagem-pizza-fundo > h1 {
+        font-size: 150px;
+
+        left: 50%;
+        top: 35%;
+        transform: translate(-50%, -50%);
+    }
+
+    main#menu > div#promocao {
+        max-height: 200px;
+    }
+
+    main#menu > div#promocao > h1 {
+        margin: 40px 5px 40px 20px;
+    }
+
+    main#menu > div#promocao > img {
+        max-width: 300px;
+        margin-left: 20px;
+    }
+
+    main#menu > div#menu-produtos-estilo {
+        columns: 2;
+        max-width: 650px;
+        margin: auto;
+    }
+
+    main#menu button#btn_mostrar-mais {
+        padding: 15px;
+        padding-left: 170px;
+        padding-right: 170px;
+    }
+
+    main#menu button#btn_mostrar-menos {
+        padding: 15px;
+        padding-left: 155px;
+        padding-right: 155px;
+    }
+
+    article#peca-ja > aside > h1 {
+        margin-left: 45px;
+    }
+
+    article#peca-ja > aside > a {
+        margin-right: 45px;
+    }
+
+    article#redes-sociais > h2 {
+        display: block;
+        text-align: center;
+        font-size: 40px;
+        margin: auto;
+        margin-top: 30px;
+        float: none;
+    }
+
+    article#redes-sociais > div {
+        width: 500px;
+        margin: auto;
+    }
+
+    article#redes-sociais a {
+        margin-top: 5px;
+    }
+
+    article#redes-sociais  ion-icon {
+        display: block;
+        width: 65px;
+        height: 65px;
+        margin: 0px 30px;
+        float: none;
+    }
+}

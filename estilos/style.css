@@ -19,6 +19,7 @@ html {
 
 ::-webkit-scrollbar {
     width: 0px;
+    height: 0px;
 }
 
 * {
@@ -108,9 +109,12 @@ header > div#imagem-pizza-fundo > h1 {
     transform: translate(-50%, -50%);
 }
 
+/* menu */
+
 main#menu {
     background-color: white;
-    margin: 0px 400px 10px 400px;
+    max-width: 1080px;
+    margin: auto;
     padding: 15px;
     box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.307);
 }
@@ -163,7 +167,7 @@ main#menu > div#promocao > h1 {
 
 main#menu > div#promocao > img {
     max-width: 350px;
-    margin-left: 460px;
+    margin-left: 420px;
 }
 
 /*Produtos do menu*/
@@ -231,8 +235,12 @@ main#menu > div#menu-produtos-estilo > div.produtos > a:hover {
 
 main#menu button#btn_mostrar-mais {
     text-align: center;
-    width: 1073px;
+    margin: auto;
+    padding-left: 420px;
+    padding-right: 420px;
     cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.447);
+    border-radius: 0px 0px 10px 10px;
     display: none;
 }
 
@@ -244,14 +252,16 @@ main#menu button#btn_mostrar-mais:hover {
 
 main#menu button#btn_mostrar-mais > h2 {
     font-size: 23px;
-    border: 1px solid rgba(0, 0, 0, 0.447);
-    border-radius: 0px 0px 10px 10px;
 }
 
 main#menu button#btn_mostrar-menos {
     text-align: center;
-    width: 1073px;
+    margin: auto;
+    padding-left: 420px;
+    padding-right: 420px;
     cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.447);
+    border-radius: 0px 0px 10px 10px;
     display: none;
 }
 
@@ -263,23 +273,24 @@ main#menu button#btn_mostrar-menos:hover {
 
 main#menu button#btn_mostrar-menos > h2 {
     font-size: 23px;
-    border: 1px solid rgba(0, 0, 0, 0.447);
-    border-radius: 0px 0px 10px 10px;
 }
 
 /*Peça já*/
 
 article#peca-ja {
     background-color: white;
-    margin: 0px 400px 10px 400px;
-    padding: 15px;
+    max-width: 1080px;
     max-height: 200px;
+    padding: 15px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.307);
 }
 
 article#peca-ja > aside {
     background-color: #e1ff0021;
-    height: 200px ;
+    height: 200px;
     border-radius: 2px;
 }
 
@@ -314,10 +325,11 @@ article#peca-ja > aside ion-icon {
 
 article#redes-sociais {
     background-color: white;
-    margin: 0px 400px 5px 400px;
+    max-width: 1080px;
+    height: 200px;
     padding: 15px;
-    height: 250px;
-    max-height: 200px;
+    margin: auto;
+    margin-bottom: 10px;
     box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.307);
 }
 
@@ -330,7 +342,7 @@ article#redes-sociais > h2 {
     float: left;
 }
 
-article#redes-sociais > a {
+article#redes-sociais  a {
     color: #d61828;
     padding: 10px;
     margin-right: 70px;
@@ -357,7 +369,7 @@ article#redes-sociais > a#insta:hover {
 
 footer#endereco {
     background-color: white;
-    padding: 12px;
+    padding: 10px;
 }
 
 footer#endereco > p#p-endereco {
