@@ -5,7 +5,7 @@
         min-height: 120px;
     }
 
-    header > div#cabecalho > h2 {
+    header > div#cabecalho h2 {
         margin-top: 45px;
     }
 
@@ -20,7 +20,7 @@
         min-height: 120px;
     }
 
-    header > div#cabecalho > h2 {
+    header > div#cabecalho h2 {
         margin-top: 45px;
     }
 
@@ -35,13 +35,20 @@
         min-height: 120px;
     }
 
-    header > div#cabecalho > h2 {
+    header > div#cabecalho  h2 {
+        font-size: 30px;
         margin-top: 45px;
+        margin-right: 15px;
+        margin-left: 10px;
     }
 
     header > div#cabecalho > nav {
-        padding-left: 200px;
+        padding-left: 0px;
         margin-top: 13px;
+    }
+
+    header > div#cabecalho > nav > a {
+        font-size: 18px;
     }
 
     main#menu > div#promocao {
@@ -101,7 +108,7 @@
         min-height: 120px;
     }
 
-    header > div#cabecalho > h2 {
+    header > div#cabecalho  h2 {
         font-size: 30px;
         margin-top: 45px;
         margin-right: 15px;
@@ -109,6 +116,7 @@
     }
 
     header > div#cabecalho > nav {
+        display: block;
         padding-left: 0px;
         margin-top: 13px;
     }
@@ -200,31 +208,64 @@
         min-height: 120px;
     }
 
-    header > div#cabecalho > h2 {
-        font-size: 30px;
-        margin-top: 45px;
-        margin-right: 15px;
-        margin-left: 10px;
+    header > div#cabecalho > div {
+        padding: 20px;
+    }
+
+    header > div#cabecalho h2 {
+        max-width: 100px;
+        margin: auto;
+        float: none;
+    }
+
+    span#burguer {
+        display: block;
+        background-color: rgb(222, 244, 56);
+        color: rgb(169, 169, 169);
+        text-align: center; 
+        font-weight: bold;
+        padding: 5px;
+        border-top: 1px solid rgba(0, 0, 0, 0.141);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+        cursor: pointer;
+    }
+
+    span#burguer:hover {
+        color: rgb(210, 210, 210);
     }
 
     header > div#cabecalho > nav {
-        padding-left: 0px;
-        margin-top: 13px;
+        display: none;
+        margin: 0px;
+        padding: 0px;
+        float: none;
     }
 
     header > div#cabecalho > nav > a {
+        display: block;
+        background-color: rgb(225, 247, 52);
+        color: rgb(169, 169, 169);
         font-size: 18px;
+        text-align: center;
+        margin: 0px;
+        padding: 12px;
+        border-top: 1px solid rgba(0, 0, 0, 0.141);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.14);
     }
 
-    header > div#imagem-pizza-fundo > img {
+    header > div#cabecalho > nav > a:hover {
+        color: rgb(210, 210, 210);
+    }
+
+    header > div#imagem-pizza-fundo {
         position: relative;
     }
 
     header > div#imagem-pizza-fundo > h1 {
-        font-size: 150px;
+        font-size: 125px;
 
         left: 50%;
-        top: 35%;
+        top: 50%;
         transform: translate(-50%, -50%);
     }
 
@@ -233,11 +274,11 @@
     }
 
     main#menu > div#promocao > h1 {
-        margin: 40px 5px 40px 20px;
+        margin: 20px 0px 20px 0px;
     }
 
     main#menu > div#promocao > img {
-        max-width: 300px;
+        max-width: 250px;
         margin-left: 20px;
     }
 
@@ -249,22 +290,22 @@
 
     main#menu button#btn_mostrar-mais {
         padding: 15px;
-        padding-left: 170px;
-        padding-right: 170px;
+        padding-left: 150px;
+        padding-right: 150px;
     }
 
     main#menu button#btn_mostrar-menos {
         padding: 15px;
-        padding-left: 155px;
-        padding-right: 155px;
+        padding-left: 135px;
+        padding-right: 135px;
     }
 
     article#peca-ja > aside > h1 {
-        margin-left: 45px;
+        margin-left: 10px;
     }
 
     article#peca-ja > aside > a {
-        margin-right: 45px;
+        margin-right: 10px;
     }
 
     article#redes-sociais > h2 {
@@ -272,7 +313,7 @@
         text-align: center;
         font-size: 40px;
         margin: auto;
-        margin-top: 30px;
+        margin-top: 15px;
         float: none;
     }
 
@@ -292,4 +333,5 @@
         margin: 0px 30px;
         float: none;
     }
+
 }

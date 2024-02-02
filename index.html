@@ -6,13 +6,17 @@
     <title>site-CAPRICCIOSA</title>
     <link rel="stylesheet" href="./estilos/style.css">
     <link rel="stylesheet" href="./estilos/media-queries.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet"/>
 </head>
 <body>
 
     <header>
         <div id="cabecalho">
-            <h2>Capricciosa</h2>
-            <nav>
+            <div>
+                <h2>Capricciosa</h2>
+            </div>
+            <span class="material-symbols-outlined" id="burguer" onclick="clickMenu()">menu</span>
+            <nav id="itens">
                 <a href="#menu">Menu</a>
                 <a href="#peca-ja">Peça já</a>
                 <a href="#redes-sociais">Nossas redes</a>
@@ -294,5 +298,22 @@
     <script src="./javascript/index.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 600) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>

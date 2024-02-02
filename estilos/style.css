@@ -31,12 +31,13 @@ html {
 
 body {
     background-image: url(../imagens/img-fundo-pizza.jpeg);
+
 }
 
 header {
     color: white;
     width: 100vw;
-    min-height: 400px; 
+    min-height: 400px;
 }
 
 /*Cabeçalho*/
@@ -50,7 +51,7 @@ header > div#cabecalho {
 
 }
 
-header > div#cabecalho > h2 {
+header > div#cabecalho h2 {
     background-color: rgb(222, 244, 56);
     font-family: var(--font_pizza-), Arial, Helvetica, sans-serif;
     font-size: 30px;
@@ -355,12 +356,12 @@ article#redes-sociais  ion-icon {
     height: 90px;
 }
 
-article#redes-sociais > a#face:hover {
+article#redes-sociais a#face:hover {
     color: #0866FF;
     transition: 0.4s;
 }
 
-article#redes-sociais > a#insta:hover {
+article#redes-sociais a#insta:hover {
     color: #CE1C5C;
     transition: 0.4s;
 }
@@ -387,3 +388,4 @@ footer#endereco > p#p-endereco {
 
 .menu_mostrar-mais{display: none;}
 .adicionar{display: block !important;}
+#burguer{display: none;}
